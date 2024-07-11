@@ -1,0 +1,23 @@
+.display {
+  padding: 10px;
+  border: 1px solid grey;
+  width: 200px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.success {
+  border-color: green;
+  color: green;
+}
+
+.error {
+  border-color: red;
+  color: red;
+}

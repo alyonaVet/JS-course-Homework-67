@@ -1,0 +1,13 @@
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 200px;
+}
+
+.btn {
+  padding: 7px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

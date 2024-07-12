@@ -1,13 +1,12 @@
 import './Keyboard.css';
 import {useDispatch, useSelector} from 'react-redux';
-import {RootState} from '../../../app/store';
+import {AppDispatch, RootState} from '../../../app/store';
 import {pressNumKeys, checkPinCode, pressBackspace} from '../PinCodeSlice';
 
+const numbers = [7, 8, 9, 4, 5, 6, 1, 2, 3];
+
 const Keyboard = () => {
-  const numbers = [7, 8, 9, 4, 5, 6, 1, 2, 3];
-
-  const dispatch = useDispatch();
-
+  const dispatch: AppDispatch = useDispatch();
   const codeValue = useSelector((state: RootState) => state.pinCode.code);
   const disabled = codeValue.length === 4;
 

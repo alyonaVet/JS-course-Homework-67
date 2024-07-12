@@ -24,7 +24,7 @@ const Keyboard = () => {
         </button>
       ))}
       <button className="btn" onClick={() => dispatch(pressBackspace())}>{`<`}</button>
-      <button className="btn" onClick={() => dispatch(pressNumKeys(0))}>0</button>
+      <button className="btn" onClick={() => dispatch(pressNumKeys(0))} disabled={disabled}>0</button>
       <button className="btn" onClick={() => dispatch(checkPinCode())}>E</button>
     </div>
   );
